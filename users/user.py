@@ -17,6 +17,9 @@ class User:
         }
 
     
+    def check_password(self, password):
+        return self.password == password
+
 
 class UserManager:
     def __init__(self):
@@ -39,6 +42,17 @@ class UserManager:
         data =[user.to_dict() for user in self.users]
         with open(self.data_file, "w") as file:
             json.dump(data, file, indent=4)
+
+
+
+    def authenticate(self, username, password):
+        """Login check: username + password match korle User object return korbe, nahole None"""
+        for u in self.users:
+            if u.username == username and u.check_password(password):
+                return u
+        return None
+
+
 
     def register_user(self, username, password, role="cashier"):
         # Check duplicate username
