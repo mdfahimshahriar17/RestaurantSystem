@@ -15,8 +15,10 @@ def main():
         choice = input("Enter choice: ").strip()
 
         if choice == "1":
-            # test user create korar jonno just ekta dummy call
-            user_manager.register_user("admin", "1234", "admin")
+            username = input("Enter username: ")
+            password = input("Enter password: ")
+            role = input("Role (admin/cashier): ").lower()
+            user_manager.register_user(username, password, role)
         
         elif choice == "2":
             user_manager.list_users()
@@ -26,7 +28,7 @@ def main():
             break
 
         else:
-            print("Invalid choice! please try again")
+            print("Invalid choice!")
 
         input("\nPress Enter to continue...")
 
