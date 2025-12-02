@@ -12,5 +12,24 @@
         "type": "Burger",
         "double_patty": false,
         "extra_cheese": false
+    },
+    {
+        "name": "Chicken Cheese pizza",
+        "price": 50.0,
+        "type": "Pizza",
+        "extra_cheese": true
+    },
+    {
+        "name": "Chicken Burger",
+        "price": 20.0,
+        "type": "Burger",
+        "double_patty": false,
+        "extra_cheese": true
+    },
+    {
+        "name": "Coca cola",
+        "price": 10.0,
+        "type": "Drink",
+        "size": "small"
     }
 ]
