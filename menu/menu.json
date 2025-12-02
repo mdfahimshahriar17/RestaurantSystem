@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Test Burger",
+        "price": 120,
+        "type": "Burger",
+        "double_patty": false,
+        "extra_cheese": false
+    },
+    {
+        "name": "Test Burger",
+        "price": 120,
+        "type": "Burger",
+        "double_patty": false,
+        "extra_cheese": false
+    }
+]
