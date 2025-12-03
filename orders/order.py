@@ -50,3 +50,13 @@ class Order:
                 "total": self.get_total(),
                 "is_paid": self.is_paid
             }
+        
+    
+
+    def to_dict(self):
+        return {
+            "customer_name": self.customer_name,
+            "items": [oi.to_dict() for oi in self.items],
+            "total": self.get_total(),
+            "is_paid": self.is_paid
+        }

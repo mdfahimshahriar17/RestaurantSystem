@@ -1,0 +1,71 @@
+[
+    {
+        "customer_name": "Test Customer",
+        "items": [
+            {
+                "name": "Beef Double Cheese Burger",
+                "type": "Burger",
+                "uit_price": 200,
+                "quantity": 2,
+                "subtotal": 400
+            },
+            {
+                "name": "Coke",
+                "type": "Drink",
+                "uit_price": 50,
+                "quantity": 3,
+                "subtotal": 150
+            }
+        ],
+        "total": 550,
+        "is_paid": false,
+        "order_id": 1,
+        "created_at": "2025-12-03T20:03:51"
+    },
+    {
+        "customer_name": "Test Customer",
+        "items": [
+            {
+                "name": "Beef Double Cheese Burger",
+                "type": "Burger",
+                "uit_price": 200,
+                "quantity": 2,
+                "subtotal": 400
+            },
+            {
+                "name": "Coke",
+                "type": "Drink",
+                "uit_price": 50,
+                "quantity": 3,
+                "subtotal": 150
+            }
+        ],
+        "total": 550,
+        "is_paid": false,
+        "order_id": 2,
+        "created_at": "2025-12-03T20:03:52"
+    },
+    {
+        "customer_name": "Test Customer",
+        "items": [
+            {
+                "name": "Beef Double Cheese Burger",
+                "type": "Burger",
+                "uit_price": 200,
+                "quantity": 2,
+                "subtotal": 400
+            },
+            {
+                "name": "Coke",
+                "type": "Drink",
+                "uit_price": 50,
+                "quantity": 3,
+                "subtotal": 150
+            }
+        ],
+        "total": 550,
+        "is_paid": false,
+        "order_id": 3,
+        "created_at": "2025-12-03T20:05:56"
+    }
+]
