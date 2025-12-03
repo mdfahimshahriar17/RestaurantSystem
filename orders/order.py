@@ -42,14 +42,6 @@ class Order:
         print("-------------------------")
         print(f"TOTAL: {self.get_total()}")
         print("=========================")
-
-        def to_dict(self):
-            return{
-                "customer_name": self.customer_name,
-                "items": [oi.to_dict() for oi in self.items],
-                "total": self.get_total(),
-                "is_paid": self.is_paid
-            }
         
     
 

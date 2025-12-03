@@ -31,5 +31,18 @@
         "price": 10.0,
         "type": "Drink",
         "size": "small"
+    },
+    {
+        "name": "Chicken Pepperoni Pizza",
+        "price": 100.0,
+        "type": "Pizza",
+        "extra_cheese": true
+    },
+    {
+        "name": "Chicken Petty Burger",
+        "price": 50.0,
+        "type": "Burger",
+        "double_patty": true,
+        "extra_cheese": true
     }
 ]
