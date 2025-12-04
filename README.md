@@ -1,4 +1,4 @@
-#Restaurant Management System (Python OOP Project)
+# Restaurant Management System (Python OOP Project)
 
 A fully functional Restaurant POS (Point of Sale) System built using Python’s Object-Oriented Programming principles.
 
@@ -15,9 +15,9 @@ This project includes:
 
 ---
 
-##Features
+## Features
 
-###User Module
+### User Module
 
 - Register new users
 - Login authentication
@@ -26,7 +26,7 @@ This project includes:
 
 ---
 
-###Menu Management
+### Menu Management
 
 - Add Pizza, Burger, and Drink items
 - Dynamic price calculation using Polymorphism
@@ -36,7 +36,7 @@ This project includes:
 
 ---
 
-###Order & Billing
+### Order & Billing
 
 - Add multiple items to an order
 - Order summary with itemized breakdown
@@ -50,7 +50,7 @@ This project includes:
 
 ---
 
-##What I Learned
+## What I Learned
 
 - Python OOP (Encapsulation, Inheritance, Polymorphism, Abstraction)
 - Composition (Order → OrderItem → FoodItem)
@@ -63,32 +63,34 @@ This project includes:
 
 ---
 
-##Project Structure
+## Project Structure
+
+```text
 RestaurantSystem/
 │── users/
-│ ├── user.py
-│ └── users.json
+│   ├── user.py
+│   └── users.json
 │
 │── menu/
-│ ├── base_item.py
-│ ├── pizza.py
-│ ├── burger.py
-│ ├── drink.py
-│ ├── menu_manager.py
-│ └── menu.json
+│   ├── base_item.py
+│   ├── pizza.py
+│   ├── burger.py
+│   ├── drink.py
+│   ├── menu_manager.py
+│   └── menu.json
 │
 │── orders/
-│ ├── order_item.py
-│ ├── order.py
-│ ├── order_manager.py
-│ └── orders.json
+│   ├── order_item.py
+│   ├── order.py
+│   ├── order_manager.py
+│   └── orders.json
 │
 │── main.py
 │── README.md
 
 ---
 
-##Example Order Output
+## Example Order Output
 ===== ORDER SUMMARY =====
 Customer: Fahim
 2 x Chicken Petty Burger = 200.0
@@ -103,7 +105,7 @@ Order Completed!
 
 ---
 
-##Tech Stack
+## Tech Stack
 
 - Python
 - JSON Storage
@@ -112,7 +114,7 @@ Order Completed!
 
 ---
 
-##Future Improvements
+## Future Improvements
 
 - Stock / Inventory system
 - Sales report (daily / weekly / monthly)
@@ -122,8 +124,9 @@ Order Completed!
 
 ---
 
-##Author
+## Author
 
-**MD Fahim Shahriar**  
+**MD Fahim Shahriar**
 Python Developer
 ---If you found this project helpful, feel free to star the repository!
+```
