@@ -89,7 +89,7 @@ def main():
                 item = Drink(name, price, size=size)
 
             else:
-                print("Invalid type!")
+                print("Something is wrong. Unable to add menu. Try Again!")
                 continue
 
 
@@ -198,6 +198,5 @@ def main():
 
 
 
-        
 if __name__=="__main__":
     main()
