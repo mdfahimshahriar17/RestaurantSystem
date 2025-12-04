@@ -44,10 +44,6 @@ class Order:
         print(f"TOTAL: {self.get_total()}")
         print("=========================")
         
-    VAT_RATE = 0.05  # 5% VAT
-
-class Order:
-    ...
 
     def get_subtotal(self):
         return sum(order_item.get_subtotal() for order_item in self.items)

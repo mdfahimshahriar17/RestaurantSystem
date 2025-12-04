@@ -162,14 +162,49 @@ def main():
                 print("No items in order. Order cancelled.")
 
             else:
+                       
                 order.print_summary()
-                confirm = input("Save this order? (y/n): ").lower()
-                
-                if confirm == "y":
-                    order_manager.save_order(order)
 
+                # VAT
+                print(f"Subtotal: {order.get_subtotal()}")
+                print(f"VAT (5%): {order.get_vat()}")
+                total_with_vat = order.get_total_after_vat()
+                print(f"Total with VAT: {total_with_vat}")
+
+                # Discount
+                discount_input = input("Apply discount? (enter % or press Enter to skip): ").strip()
+
+                if discount_input:
+                    try:
+                        discount_percent = float(discount_input)
+                        total_payable = order.apply_discount(discount_percent)
+                    except:
+                        print("Invalid discount input. No discount applied.")
+                        total_payable = total_with_vat
                 else:
-                    print("Order discard.")
+                    total_payable = total_with_vat
+
+                print(f"Total Payable: {total_payable}")
+
+                # Payment accept
+                try:
+                    cash = float(input("Cash given by customer: "))
+                except:
+                    print("Invalid cash input. Order cancelled.")
+                    continue
+
+                if cash < total_payable:
+                    print("Not enough cash! Order cancelled.")
+                    continue
+
+                change = cash - total_payable
+                print(f"Change to return: {change}")
+
+                # Finalize
+                order.is_paid = True
+                order_manager.save_order(order)
+                print("Order completed & saved successfully!")
+
 
 
         elif choice == "8":
